@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+         bootstrap="Tests/bootstrap.php"
+         beStrictAboutTestsThatDoNotTestAnything="true"
+         checkForUnintentionallyCoveredCode="true"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutTestSize="true"
+        >
+    <testsuites>
+        <testsuite name="SGKBarcodeBundle Test Suite">
+            <directory>./Tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>./</directory>
+            <exclude>
+                <directory>./DependencyInjection</directory>
+                <directory>./DineshBarcode</directory>
+                <directory>./Resources</directory>
+                <directory>./Tests</directory>
+                <directory>./Twig</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

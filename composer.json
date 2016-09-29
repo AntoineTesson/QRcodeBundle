@@ -1,0 +1,41 @@
+{
+	"name" : "yellowskies/QRcode-bundle",
+	"type" : "symfony-bundle",
+	"description" : "Symfony2/Symfony3 Barcode Generator Bundle with Twig function extension",
+	"keywords" : [
+		"Symfony2",
+		"Symfony3",
+		"barcode",
+		"Symfony",
+		"Bundle",
+		"Twig",
+		"generator",
+		"qrcode",
+		"qr code"
+	],
+	"license" : "GNU-LGPLv3",
+	"authors" : [{
+			"name" : "Nicola Asuni",
+			"email" : "info@tecnick.com"
+		}, {
+			"name" : "SHANG Guokan",
+			"email" : "shangguokan@hotmail.com",
+			"homepage" : "https://github.com/shangguokan"
+		}
+	],
+	"require" : {
+		"php" : ">=5.5.9|^7.0",
+		"symfony/framework-bundle" : "~2.3|^3.0",
+		"symfony/twig-bundle" : "~2.3|^3.0",
+		"symfony/options-resolver" : "~2.1|^3.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "4.5.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"SGK\\BarcodeBundle\\" : ""
+		}
+	},
+	"minimum-stability" : "stable"
+}
