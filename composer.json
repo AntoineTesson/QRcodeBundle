@@ -1,10 +1,9 @@
 {
-	"name" : "yellowskies/QRcode-bundle",
+	"name" : "yellowskies/qr-code-bundle",
 	"type" : "symfony-bundle",
-	"description" : "Symfony2/Symfony3 Barcode Generator Bundle with Twig function extension",
+	"description" : "Symfony2Barcode Generator Bundle with Twig function extension",
 	"keywords" : [
 		"Symfony2",
-		"Symfony3",
 		"barcode",
 		"Symfony",
 		"Bundle",
