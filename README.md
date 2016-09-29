@@ -41,7 +41,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Skies\QRcodeBundle\SkiesQRrcodeBundle(),
+        new Skies\QRcodeBundle\SkiesQRcodeBundle(),
     );
 }
 ```
