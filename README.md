@@ -18,14 +18,14 @@ Features:
 Add YellowskiesQRcodeBundle by running the command:
 
 ```sh
-$ php composer.phar require yellowskies/QRcode-bundle 
+$ php composer.phar require yellowskies/QR-code-bundle 
 ```
 
 Or, add YellowskiesQRcodeBundle to your ``composer.json``, then execute ``php composer.phar update``
 ```json
 
 "require": {
-        "yellowskies/QRcode-bundle": "dev-master"
+        "yellowskies/QR-code-bundle": "dev-master"
     }
 
 ```
