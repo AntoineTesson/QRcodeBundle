@@ -3,6 +3,7 @@
 
 
 YellowskiesQRcodeBundle is a Symfony2  Barcode Generator Bundle.
+Is taken from the old draftt sgk/barcode-bundle which was abandoned.
 
 Features:
 
