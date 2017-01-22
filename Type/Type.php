@@ -6,7 +6,7 @@ namespace Skies\QRcodeBundle\Type;
  * Class BarcodeType
  * Supported standards of barcode
  *
- * @package SGK\BarcodeBundle\Type
+ * @package Skies\QRcodeBundle\Type
  */
 class Type
 {
