@@ -1,6 +1,6 @@
 # YellowskiesQRcodeBundle
 
-
+WORKS WITH PHP 7.1 AND SYMFONY 3.2.2 (not yet with twig 2.xx).
 
 YellowskiesQRcodeBundle is a Symfony2  Barcode Generator Bundle.
 Is taken from the old draftt sgk/barcode-bundle which was abandoned.
