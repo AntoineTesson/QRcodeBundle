@@ -16,7 +16,7 @@
          beStrictAboutTestSize="true"
         >
     <testsuites>
-        <testsuite name="SGKBarcodeBundle Test Suite">
+        <testsuite name="YellowskiesQRcodeBundle Test Suite">
             <directory>./Tests/</directory>
         </testsuite>
     </testsuites>

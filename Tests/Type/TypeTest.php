@@ -8,7 +8,7 @@ use SGK\BarcodeBundle\Type\Type;
 /**
  * Class TypeTest
  *
- * @package SGK\BarcodeBundle\Tests\Type
+ * @package Skies\QRcodeBundle\Tests\Type
  */
 class TypeTest extends PHPUnit_Framework_TestCase
 {
