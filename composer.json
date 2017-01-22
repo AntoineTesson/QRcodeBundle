@@ -14,9 +14,6 @@
 	],
 	"license" : "GNU-LGPLv3",
 	"authors" : [{
-			"name" : "Nicola Asuni",
-			"email" : "info@tecnick.com"
-		}, {
 			"name" : "Antoine Tesson",
 			"email" : "tesson.a@gmail.com",
 			"homepage" : "https://yellow-skies.com"
