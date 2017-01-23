@@ -2,6 +2,8 @@
 
 WORKS WITH PHP 7.1 AND SYMFONY 3.2.2 (not yet with twig 2.xx).
 
+[![Latest Stable Version](https://poser.pugx.org/yellowskies/qr-code-bundle/version)](https://packagist.org/packages/yellowskies/qr-code-bundle)
+
 YellowskiesQRcodeBundle is a Symfony2  Barcode Generator Bundle.
 Is taken from the old draftt sgk/barcode-bundle which was abandoned.
 
