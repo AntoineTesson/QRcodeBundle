@@ -3,7 +3,7 @@
 namespace Skies\QRcodeBundle\Tests\Type;
 
 use PHPUnit_Framework_TestCase;
-use SGK\BarcodeBundle\Type\Type;
+use Skies\QRcodeBundle\Type\Type;
 
 /**
  * Class TypeTest
