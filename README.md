@@ -1,6 +1,6 @@
 # YellowskiesQRcodeBundle
 
-WORKS WITH PHP 7.1 AND SYMFONY 3.2.2 (not yet with twig 2.xx).
+WORKS WITH PHP 7.1 AND SYMFONY 2 => 3.3.x AND Twig 2.x
 
 [![Latest Stable Version](https://poser.pugx.org/yellowskies/qr-code-bundle/version)](https://packagist.org/packages/yellowskies/qr-code-bundle)
 
