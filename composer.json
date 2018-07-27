@@ -10,7 +10,9 @@
 		"Twig",
 		"generator",
 		"qrcode",
-		"qr code"
+		"qr code",
+		"symfony3",
+		"symfony4"
 	],
 	"license" : "GNU-LGPLv3",
 	"authors" : [{
