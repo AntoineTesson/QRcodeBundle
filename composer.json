@@ -14,7 +14,7 @@
 		"symfony3",
 		"symfony4"
 	],
-	"license" : "GNU-LGPLv3",
+	"license" : "Apache-2.0",
 	"authors" : [{
 			"name" : "Antoine Tesson",
 			"email" : "tesson.a@gmail.com",
