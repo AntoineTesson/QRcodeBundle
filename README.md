@@ -20,19 +20,19 @@ Features:
 Add YellowskiesQRcodeBundle by running the command:
 
 ```sh
-$ php composer.phar require yellowskies/QR-code-bundle 
+$ php composer.phar require yellowskies/qr-code-bundle 
 ```
 
 Or, add YellowskiesQRcodeBundle to your ``composer.json``, then execute ``php composer.phar update``
 ```json
 
 "require": {
-        "yellowskies/QR-code-bundle": "1.2.5"
+        "yellowskies/qr-code-bundle": "1.2.7"
     }
 
 ```
 
-Composer will install the bundle to your project's vendor/Yellowskies directory.
+Composer will install the bundle to your project's vendor/yellowskies directory.
 
 Then, Enable the bundle in the kernel:
 ```php
