@@ -71,6 +71,7 @@ class Generator
                     'width',
                     'height',
                     'color',
+                    'parameters',
                 ]
             )
             ->setDefaults(
@@ -94,6 +95,7 @@ class Generator
             'width' => ['integer'],
             'height' => ['integer'],
             'color' => ['string', 'array'],
+            'parameters' => ['array'],
         ];
 
         foreach ($allowedTypes as $typeName => $typeValue) {
@@ -111,7 +113,6 @@ class Generator
         foreach ($allowedValues as $valueName => $value) {
             $resolver->setAllowedValues($valueName, $value);
         }
-
     }
 
     /**
@@ -135,7 +136,7 @@ class Generator
                     $this->dns2d,
                     $this->formatFunctionMap[$options['format']],
                 ],
-                [$options['code'], $options['type'], $options['width'], $options['height'], $options['color']]
+                [$options['code'], $options['type'], $options['parameters'], $options['width'], $options['height'], $options['color']]
             );
         } else {
             return call_user_func_array(
