@@ -85,6 +85,7 @@ class Generator
                     'color' => function (Options $options) {
                         return $options['format'] == 'png' ? [0, 0, 0] : 'black';
                     },
+					'parameters' => [],
                 ]
             );
 
