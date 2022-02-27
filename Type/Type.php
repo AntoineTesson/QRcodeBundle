@@ -5,8 +5,6 @@ namespace Skies\QRcodeBundle\Type;
 /**
  * Class BarcodeType
  * Supported standards of barcode
- *
- * @package Skies\QRcodeBundle\Type
  */
 class Type
 {
@@ -57,10 +55,8 @@ class Type
 
     /**
      * @param string $type type of barcode
-     *
-     * @return string
      */
-    public static function getDimension($type)
+    public static function getDimension(string $type): string
     {
         if (!self::hasType($type)) {
             throw new \InvalidArgumentException("Type of Barcode is not supported.");
@@ -75,10 +71,8 @@ class Type
 
     /**
      * @param string $type type of barcode
-     *
-     * @return bool
      */
-    public static function hasType($type)
+    public static function hasType(string $type): bool
     {
         return in_array($type, self::$oneDimensionalBarcodeType) || in_array($type, self::$twoDimensionalBarcodeType);
     }
