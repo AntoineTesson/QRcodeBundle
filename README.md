@@ -1,10 +1,10 @@
 # YellowskiesQRcodeBundle
 
-WORKS WITH PHP 7.2 AND SYMFONY 2 / 3 / 4  AND Twig 2.x
+WORKS WITH PHP >= 7.1 AND SYMFONY 4/ 5 / 6 AND Twig 2.x
 
 [![Latest Stable Version](https://poser.pugx.org/yellowskies/qr-code-bundle/version)](https://packagist.org/packages/yellowskies/qr-code-bundle)
 
-YellowskiesQRcodeBundle is a Symfony2/3/4  Barcode Generator Bundle.
+YellowskiesQRcodeBundle is a Symfony4/5/6 Barcode Generator Bundle.
 
 Features:
 
@@ -27,7 +27,7 @@ Or, add YellowskiesQRcodeBundle to your ``composer.json``, then execute ``php co
 ```json
 
 "require": {
-        "yellowskies/qr-code-bundle": "1.2.7"
+        "yellowskies/qr-code-bundle": "1.2.10"
     }
 
 ```
