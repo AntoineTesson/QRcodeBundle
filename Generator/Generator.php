@@ -9,10 +9,7 @@ use Symfony\Component\OptionsResolver\Options;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
- * Class Generator
  * Encapsulation of project https://github.com/dineshrabara/barcode for Symfony2 usage
- *
- * @package SGK\BarcodeBundle\Generator
  */
 class Generator
 {
@@ -40,9 +37,6 @@ class Generator
         'png' => 'getBarcodePNG',
     ];
 
-    /**
-     * construct
-     */
     public function __construct()
     {
         $this->dns2d = new DNS2D();
@@ -51,12 +45,7 @@ class Generator
         $this->configureOptions($this->resolver);
     }
 
-    /**
-     * Configure generate options
-     *
-     * @param OptionsResolver $resolver
-     */
-    protected function configureOptions(OptionsResolver $resolver)
+    protected function configureOptions(OptionsResolver $resolver): void
     {
         $resolver
             ->setRequired(
@@ -77,13 +66,13 @@ class Generator
             ->setDefaults(
                 [
                     'width' => function (Options $options) {
-                        return Type::getDimension($options['type']) == '2D' ? 5 : 2;
+                        return Type::getDimension($options['type']) === '2D' ? 5 : 2;
                     },
                     'height' => function (Options $options) {
-                        return Type::getDimension($options['type']) == '2D' ? 5 : 30;
+                        return Type::getDimension($options['type']) === '2D' ? 5 : 30;
                     },
                     'color' => function (Options $options) {
-                        return $options['format'] == 'png' ? [0, 0, 0] : 'black';
+                        return $options['format'] === 'png' ? [0, 0, 0] : 'black';
                     },
 					'parameters' => [],
                 ]
@@ -127,11 +116,11 @@ class Generator
      *
      * @return mixed
      */
-    public function generate($options = [])
+    public function generate(array $options = [])
     {
         $options = $this->resolver->resolve($options);
 
-        if (Type::getDimension($options['type']) == '2D') {
+        if (Type::getDimension($options['type']) === '2D') {
             return call_user_func_array(
                 [
                     $this->dns2d,

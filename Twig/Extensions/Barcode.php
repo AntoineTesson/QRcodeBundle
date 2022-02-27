@@ -4,11 +4,6 @@ namespace Skies\QRcodeBundle\Twig\Extensions;
 
 use Skies\QRcodeBundle\Generator\Generator;
 
-/**
- * Class Project_Twig_Extension
- *
- * @package Skies\QRcodeBundle\Twig\Extensions
- */
 class Barcode extends \Twig\Extension\AbstractExtension
 {
     /**
@@ -16,18 +11,12 @@ class Barcode extends \Twig\Extension\AbstractExtension
      */
     protected $generator;
 
-    /**
-     * @param Generator $generator
-     */
     public function __construct(Generator $generator)
     {
         $this->generator = $generator;
     }
 
-    /**
-     * @return array
-     */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new \Twig\TwigFunction(
