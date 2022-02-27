@@ -2,24 +2,17 @@
 
 namespace Skies\QRcodeBundle\Tests\Type;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Skies\QRcodeBundle\Type\Type;
 
-/**
- * Class TypeTest
- *
- * @package Skies\QRcodeBundle\Tests\Type
- */
-class TypeTest extends PHPUnit_Framework_TestCase
+class TypeTest extends TestCase
 {
     /**
      * testConfigureOptions
-     *
-     * @expectedException \InvalidArgumentException
      */
-    public function testInvalidArgumentException()
+    public function testInvalidArgumentException(): void
     {
-        $type = new Type();
-        $type->getDimension('Unknown Type');
+        $this->expectException(\InvalidArgumentException::class);
+        Type::getDimension('Unknown Type');
     }
 }
