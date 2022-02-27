@@ -68,7 +68,7 @@ To generate one barcode, you have 5 options can be configured.
   
 The bundle registers one service: ``skies_barcode.generator`` which will allows you to generate barcode:
 
-* outpout html
+* output html
 ```php
 $options = array(
     'code'   => 'string to encode',
@@ -82,7 +82,7 @@ $barcode =
 return new Response($barcode);
 ```
 
-* outpout svg
+* output svg
 ```php
 $options = array(
     'code'   => 'string to encode',
@@ -99,7 +99,7 @@ $barcode =
 return new Response($barcode);
 ```
 
-* outpout png
+* output png
 ```php
 $options = array(
     'code'   => 'string to encode',
