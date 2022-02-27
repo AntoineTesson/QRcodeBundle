@@ -2,20 +2,12 @@
 
 namespace Skies\QRcodeBundle\Tests\Generator;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Skies\QRcodeBundle\Generator\Generator;
 
-/**
- * Class GeneratorTest
- *
- * @package SGK\BarcodeBundle\Tests\Generator
- */
-class GeneratorTest extends PHPUnit_Framework_TestCase
+class GeneratorTest extends TestCase
 {
-    /**
-     * @return array
-     */
-    public function getOptions()
+    public function getOptions(): array
     {
         return array(
             array(
@@ -51,23 +43,18 @@ class GeneratorTest extends PHPUnit_Framework_TestCase
     /**
      * testGenerate
      *
-     * @param array $options
-     *
      * @medium
      *
      * @dataProvider getOptions
      */
-    public function testGenerate($options = array())
+    public function testGenerate(array $options = array()): void
     {
         $generator = new Generator();
 
-        $this->assertTrue(is_string($generator->generate($options)));
+        $this->assertIsString($generator->generate($options));
     }
 
-    /**
-     * @return array
-     */
-    public function getErrorOptions()
+    public function getErrorOptions(): array
     {
         return array(
             array(
@@ -111,18 +98,12 @@ class GeneratorTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * testConfigureOptions
-     *
-     * @param array $options
-     *
      * @medium
-     *
      * @dataProvider getErrorOptions
-     *
-     * @expectedException \Exception
      */
-    public function testConfigureOptions($options = array())
+    public function testConfigureOptions(array $options = array()): void
     {
+        $this->expectException(\Exception::class);
         $generator = new Generator();
 
         $generator->generate($options);
