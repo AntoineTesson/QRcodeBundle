@@ -1,0 +1,6 @@
+/.settings/
+.buildpath
+composer.lock
+.phpunit.result.cache
+.project
+/vendor/

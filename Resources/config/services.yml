@@ -1,0 +1,10 @@
+services:
+    skies_barcode.generator:
+        class: Skies\QRcodeBundle\Generator\Generator
+
+    skies_barcode.twig.extension:
+        class: Skies\QRcodeBundle\Twig\Extensions\Barcode
+        arguments:
+            - '@skies_barcode.generator'
+        tags:
+            - { name: twig.extension }
