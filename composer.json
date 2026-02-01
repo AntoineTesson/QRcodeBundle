@@ -11,7 +11,8 @@
         "qr code",
         "barcode",
         "symfony6",
-        "symfony7"
+        "symfony7",
+        "symfony8"
     ],
     "license": "Apache-2.0",
     "authors": [
@@ -23,14 +24,14 @@
     ],
     "require": {
         "php": ">=8.2",
-        "symfony/framework-bundle": "^6.4 || ^7.0",
-        "symfony/twig-bundle": "^6.4 || ^7.0",
-        "symfony/options-resolver": "^6.4 || ^7.0",
+        "symfony/framework-bundle": "^6.4 || ^7.0 || ^8.0",
+        "symfony/twig-bundle": "^6.4 || ^7.0 || ^8.0",
+        "symfony/options-resolver": "^6.4 || ^7.0 || ^8.0",
         "twig/twig": "^3.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.5 || ^11.0",
-        "symfony/phpunit-bridge": "^6.4 || ^7.0"
+        "symfony/phpunit-bridge": "^6.4 || ^7.0 || ^8.0"
     },
     "autoload": {
         "psr-4": {

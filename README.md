@@ -5,7 +5,7 @@
 
 A Symfony Barcode & QR Code Generator Bundle with Twig extension.
 
-**Supports PHP 8.2+ and Symfony 6.4 / 7.x**
+**Supports PHP 8.2+ and Symfony 6.4 / 7.x / 8.x**
 
 ## Features
 
@@ -149,7 +149,7 @@ file_put_contents('/tmp/barcode.png', base64_decode($barcode));
 ## Requirements
 
 - PHP 8.2+
-- Symfony 6.4+ / 7.x
+- Symfony 6.4+ / 7.x / 8.x
 - GD extension (for PNG output)
 - bcmath extension (for Intelligent Mail barcodes)
 
