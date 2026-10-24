@@ -2,6 +2,7 @@
 
 namespace Skies\QRcodeBundle\Tests\Generator;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Skies\QRcodeBundle\Generator\Generator;
 
@@ -40,9 +41,7 @@ class GeneratorTest extends TestCase
         ];
     }
 
-    /**
-     * @dataProvider getOptions
-     */
+    #[DataProvider('getOptions')]
     public function testGenerate(array $options): void
     {
         $generator = new Generator();
@@ -93,9 +92,7 @@ class GeneratorTest extends TestCase
         ];
     }
 
-    /**
-     * @dataProvider getErrorOptions
-     */
+    #[DataProvider('getErrorOptions')]
     public function testConfigureOptions(array $options): void
     {
         $this->expectException(\Exception::class);

@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.2] - 2026-10-24
+
+### Fixed
+- PHP 8.5: removed `imagedestroy()` calls in `DNS1D` and `DNS2D` (no effect since PHP 8.0,
+  deprecated in 8.5).
+- Tests: data providers declared with `#[DataProvider]` attributes (the test framework v12
+  ignores the `@dataProvider` annotation, so both provider tests ran without arguments).
+- CI: test matrix on PHP 8.3, 8.4 and 8.5 (the test framework v12.5, required by the CVE fix,
+  needs PHP 8.3+).
+
 ## [2.1.1] - 2026-10-24
 
 ### Fixed

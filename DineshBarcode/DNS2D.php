@@ -188,7 +188,6 @@ class DNS2D {
             echo $png;
         } else {
             imagepng($png);
-            imagedestroy($png);
         }
         $image = ob_get_clean();
         $image = base64_encode($image);
@@ -277,10 +276,8 @@ class DNS2D {
             //echo $png;
         }
         if (ImagePng($png, $save_file)) {
-            imagedestroy($png);
             return str_replace(public_path(), '', $save_file);
         } else {
-            imagedestroy($png);
             return $code;
         }
     }
